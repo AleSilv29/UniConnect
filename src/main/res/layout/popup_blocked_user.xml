@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Message to inform teachers about the reported user -->
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This user has been reported by multiple users and has been temporarily blocked from using the chat feature. As responsible members of our academic community, please verify if this user is affiliated with our university. Your input is valuable in maintaining a safe and conducive online environment for all users."/>
+
+        <TextView
+            android:id="@+id/text_blocked_user_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blocked User:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_blocked_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Name"
+            android:textStyle="bold"/>
+
+
+        <!-- Buttons for teachers to decide whether to block or keep the user -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/button_block"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Block User"/>
+
+            <Button
+                android:id="@+id/button_keep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Keep User"/>
+        </LinearLayout>
+
+        <!-- Optional: Display the count of teacher votes -->
+        <TextView
+            android:id="@+id/text_vote_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="0 Teachers voted to block this user"/>
+
+    </LinearLayout>
+
+</LinearLayout>

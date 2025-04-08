@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timetable_background"
+    tools:context=".timetable.ui.TimetableActivity">
+
+    <Button
+        android:id="@+id/btnFiltreaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#7186DA"
+        android:text="Find in other groups"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:backgroundTint="#7186DA"
+        android:src="@drawable/baseline_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOpenPopup"
+        app:layout_constraintStart_toEndOf="@+id/btnFiltreaza"
+        app:layout_constraintTop_toTopOf="@+id/buttonOpenPopup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonOpenPopup"
+        android:layout_width="43dp"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#7186DA"
+        android:text="+"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="@+id/btnFiltreaza"
+        app:layout_constraintTop_toTopOf="@+id/btnFiltreaza"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenPopup"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/monday2"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                />
+            <LinearLayout
+                android:id="@+id/mondayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tuesday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/tuesdayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultTextViewTuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/wednesday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/wednesdayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultTextViewWednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/thursday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/thursdayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultTextViewThursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/friday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/fridayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultTextViewFriday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#216193"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7186DA"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_login_gradient"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/josefin_sans"
+            android:text="@string/home"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="4dp"
+        android:text="Timetable"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/josefin_sans"
+        app:layout_constraintBottom_toTopOf="@+id/btnFiltreaza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

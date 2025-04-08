@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">UniConnect</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="uniconnect">UniConnect</string>
+    <string name="imp_news">Important News</string>
+    <string name="time_table">Time Table</string>
+    <string name="news">News</string>
+    <string name="catalog">Catalog</string>
+    <string name="resetPsswd">Forgot Password?</string>
+    <string name="addNews">Add</string>\
+    <string name="email">Email</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="signup">Sign Up\n</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="year">Year:</string>
+    <string name="news_title">News Title</string>
+    <string name="news_content">News Content</string>
+    <string name="group">Group:</string>
+    <string name="semigroup">Semigroup:</string>
+    <string name="save">Save</string>
+    <string name="enter_group_hint">Enter Group Subgroup, e.g 711 1</string>
+    <string name="enter_subgroup_hint">Enter Subgroup</string>
+    <string name="filter_button_label">Filter</string>
+    <string name="all">all</string>
+    <string name="log_out">Log out</string>
+    <string name="timetable">Timetable</string>
+    <string name="welcome">Welcome!</string>
+    <string name="monday">Monday:</string>
+    <string name="monday2">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="home">Home</string>
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id" translatable="false">UniConnectChannel</string>
+    <string name="news_notification_channel_id" translatable="false">NewsChannel</string>
+    <string name="select_day">Select Day</string>
+    <string name="select_subgroup">Select Subgroup</string>
+    <string name="select_teacher">Select Teacher</string>
+    <string name="select_week">Select Week</string>
+    <string name="select_type">Select Type</string>
+    <string name="news_notification_channel_description">News Notification</string>
+    <string name="news_page_activity_title">UniConnect News</string>
+    <string name="important_news_notification_channel_id">ImportantNewsChannel</string>
+
+    <string-array name="subgroup_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="type_options">
+        <item>Course</item>
+        <item>Laboratory</item>
+        <item>Seminar</item>
+    </string-array>
+
+    <string-array name="week_options">
+        <item>Week 1</item>
+        <item>Week 2</item>
+        <item>Evey Week</item>
+    </string-array>
+
+</resources>

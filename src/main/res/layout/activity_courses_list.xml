@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timetable_background"
+    tools:context=".timetable.ui.TimetableActivity">
+
+    <TextView
+        android:id="@+id/buttonBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/josefin_sans"
+        android:text="Classbook"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/enter_group_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack2" />
+
+    <Button
+        android:id="@+id/btnFiltreaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/filter_button_label"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFiltreaza"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mondayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/monday2"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/mondayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/resultTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuesdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tuesday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/tuesdayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/resultTextViewTuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wednesdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/wednesday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/wednesdayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/resultTextViewWednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/thursday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                android:id="@+id/thursdayTextView"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/thursdayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/resultTextViewThursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/friday"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                android:id="@+id/fridayTextView"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/fridayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/resultTextViewFriday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:maxLines="100"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7186DA"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_login_gradient"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/josefin_sans"
+            android:text="@string/home"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addCourseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:background="@drawable/add_delete_button"
+        android:padding="5dp"
+        android:text="Add Course"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBack2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGroup"
+        app:layout_constraintRight_toRightOf="@+id/buttonBack2"
+        app:layout_constraintTop_toTopOf="@+id/buttonBack2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deleteCourseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/add_delete_button"
+        android:padding="5dp"
+        android:text="Delete Course"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGroup"
+        app:layout_constraintTop_toTopOf="@+id/addCourseButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

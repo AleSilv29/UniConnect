@@ -1,0 +1,137 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classbook_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="#4DA6EC"
+            android:drawableLeft="@drawable/baseline_arrow_back_24_white"
+            android:drawablePadding="8dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/dateSelectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/selectDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:backgroundTint="#4DA6EC"
+                android:layout_marginStart="16dp"/>
+
+            <!-- TextView to display selected date -->
+            <TextView
+                android:id="@+id/selectedDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <!-- TableLayout for the attendance -->
+                <TableLayout
+                    android:id="@+id/attendanceTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#7EB6E3"
+                    android:showDividers="beginning|middle|end"
+                    android:divider="#000000">
+                </TableLayout>
+
+            </ScrollView>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="#4DA6EC"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:onClick="onSaveButtonClicked" />
+
+        <Button
+            android:id="@+id/showAttendanceTableButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Attendance Table"
+            android:backgroundTint="#4DA6EC"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/dateSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <!-- TableLayout for the attendance -->
+                <TableLayout
+                    android:id="@+id/firebaseAttendanceTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#7EB6E3"
+                    android:showDividers="beginning|middle|end"
+                    android:divider="#000000">
+                </TableLayout>
+
+            </ScrollView>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>

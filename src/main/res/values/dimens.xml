@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="course_padding">8dp</dimen>
+    <dimen name="course_spacing">10dp</dimen>
+    <dimen name="delete_icon_margin">8dp</dimen>
+</resources>

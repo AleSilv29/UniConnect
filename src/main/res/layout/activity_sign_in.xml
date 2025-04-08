@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    class="com.example.UniConnect2.databinding.MyCustomBinding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/sign_in_background_2"
+    tools:context=".common.ui.MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/person_icon"
+                    android:layout_width="176dp"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/person_icon"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/person_icon_password"
+                    android:layout_width="176dp"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/person_icon_password"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/username"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Username"
+                android:textColorHint="@color/white"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:textColor="@color/white"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/password"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:textColor="@color/white"
+                android:drawablePadding="8dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Log In"
+                android:id="@+id/loginAccountButton"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blueUBB"
+                app:cornerRadius = "20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/resetPsswdButton"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/resetPsswd"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+
+</LinearLayout>
