@@ -294,7 +294,7 @@ class ChatMessagesActivity : AppCompatActivity() {
         val request: Request = Request.Builder()
             .url(url)
             .post(body)
-            .header("Authorization", "Bearer THIS_CODE_IS_PRIVATE")
+            .header("Authorization", "Bearer PRIVATE")
             .build()
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
