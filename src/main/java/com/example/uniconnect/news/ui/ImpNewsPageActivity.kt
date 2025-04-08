@@ -449,7 +449,7 @@ class ImpNewsPageActivity : ComponentActivity() {
         val request = Request.Builder()
             .url(url)
             .post(body)
-            .header("Authorization", "Bearer AAAAiataEiI:APA91bFL-mTbqhfv8hnKWlY2EqGiFoEWVbC6-TuYfJtC56sr4m4XusLPoGF8V2PdGK3MgN8SynqPtdsq-m2AgmsMgtFm2ck19V71kLIIJDx_iU0866zTBrTRYY3qDL3L4WHcaFUNu3ci")
+            .header("Authorization", "Bearer PRIVATE")
             .build()
 
         client.newCall(request).enqueue(object : Callback {
